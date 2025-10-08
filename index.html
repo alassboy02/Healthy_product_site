@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="RAR Healthy Product - Produits naturels et transformation agroalimentaire." />
+  <title>RAR Healthy Product</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="brand">
+      <!-- Laisser l'image vide pour que l'utilisateur ajoute la sienne dans /images -->
+      <img class="logo-img" src="file:///C:/Users/SOLUTICE/Desktop/Tantie%20web%20site/Logo.jpg" alt="Logo RAR" onerror="this.style.display='none'" aria-hidden="true">
+      <div class="logo-text">
+        <div class="logo">RAR Healthy Product</div>
+        <div class="tagline">Produits naturels & bien-être</div>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#accueil" class="nav-link">Accueil</a>
+      <a href="#produits" class="nav-link">Produits</a>
+      <a href="#apropos" class="nav-link">À propos</a>
+      <a href="#Notre-entreprise" class="nav-link">Notre Entreprise</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="socials" aria-hidden="false">
+      <a class="social" href="https://www.facebook.com/RAR" target="_blank" rel="noopener" aria-label="Facebook RAR">f</a>
+      <a class="social" href="https://www.tiktok.com/@RAR" target="_blank" rel="noopener" aria-label="TikTok RAR">t</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+   <section id="accueil" class="hero section">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        Bienvenue chez <span>RAR Healthy Product</span>
+        <!-- Ton logo à droite -->
+        <img src="file:///C:/Users/SOLUTICE/Desktop/Tantie%20web%20site/Logo.jpg" alt="Logo RAR Healthy Product" class="hero-logo">
+      </h1>
+      <p class="hero-sub">Produits sains, locaux, transformés avec soin. Livraison et commandes rapides.</p>
+      <a class="btn btn-primary" href="#produits">Découvrir nos produits</a>
+    </div>
+  </div>
+</section>
+
+    <!-- PRODUITS -->
+    <section id="produits" class="section">
+      <div class="container">
+        <h2 class="title">Nos Produits</h2>
+
+        <!-- Controls: recherche + filtre -->
+        <div class="controls">
+          <input id="search-input" type="search" placeholder="Recherche (nom, description...)" aria-label="Recherche de produits">
+          <select id="category-filter" aria-label="Filtrer par catégorie">
+            <option value="all">Tous les produits</option>
+            <option value="boisson">Boissons</option>
+            <option value="aliment">Aliments</option>
+            <option value="cosmetique">Cosmétique</option>
+            <option value="plante">Plantes</option>
+          </select>
+        </div>
+
+        <div id="produits-grid" class="produits-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="apropos" class="section">
+      <div class="container">
+        <h2 class="title">À propos de nous</h2>
+        <div class="apropos-grid">
+          <div class="apropos-card">
+            <h3>Notre Vision</h3>
+            <p>Devenir une référence régionale en matière de produits agroalimentaires sains.</p>
+          </div>
+          <div class="apropos-card">
+            <h3>Nos valeurs</h3>
+            <ul>
+              <li>Produits 100 % naturels</li>
+              <li>Qualité & traçabilité</li>
+              <li>Innovation et respect local</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTRE ENTREPRISE -->
+    <section id="Notre-entreprise" class="section">
+      <div class="container">
+        <h2 class="title">Notre Entreprise</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <img src="file:///C:/Users/SOLUTICE/Desktop/Tantie%20web%20site/Logo.jpg" alt="RAR Healthy Product team smiling together in a bright workspace with company logo visible on the wall, conveying a welcoming and collaborative atmosphere" class="portfolio-img" onerror="this.style.display='none'">
+            <h4>Notre Entreprise (Une Entreprise engagée pour la qualité et l'innovation locale.)</h4>
+            <p>RAR Healthy Product est une entreprise spécialisée dans la transformation agroalimentaire de produits naturels issus de ressources locales en extraits, tisanes, boissons et pâtes nutritives. En effet, nous avons pour mission de promouvoir la santé et le bien-être à travers des produits accessibles, nutritifs et respectueux de l’environnement. De ce fait, nous visons à améliorer la santé des populations tout en valorisant les ressources agricoles locales.</p>
+          </div>
+          <div class="portfolio-card">
+            <h4>Nos Productions</h4>
+            <ul>
+              <li>Boissons naturelles & détox</li>
+              <li>Extraction nutritive (carotte, concombre)</li>
+              <li>Partenariats coopératifs</li>
+              <li>transformation des pattes agroalimentaires</li>
+            </ul>
+              <!-- Carte Google Maps -->
+   <div class="carte-projet">
+    <h3>Emplacement de RAR Healthy Product</h3>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d451.5048208061783!2d2.1798637961120337!3d13.507168046074021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sne!4v1759868842475!5m2!1sfr!2sne" 
+        width="100%" height="350" style="border:0;" 
+        allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="title">Contactez-nous</h2>
+        <p>Pour vos commandes, questions & infos :</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://wa.me/22793980078" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline" href="https://www.facebook.com/RAR" target="_blank" rel="noopener">Facebook</a>
+          <a class="btn btn-outline" href="https://www.tiktok.com/@RAR" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2025 RAR Healthy Product</div>
+      <div class="footer-links">
+        <a href="https://www.facebook.com/RAR" target="_blank" rel="noopener">Facebook</a> •
+        <a href="https://www.tiktok.com/@RAR" target="_blank" rel="noopener">TikTok</a> •
+        <a href="https://wa.me/22793980078" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="myModal" class="modal" aria-hidden="true" role="dialog" aria-label="Image agrandie">
+    <button class="close" aria-label="Fermer">&times;</button>
+    <img class="modal-content" id="img01" alt="Image du produit">
+  </div>
+
+  <!-- WhatsApp flottant -->
+  <a id="whatsapp-fab" class="whatsapp-fab" href="https://wa.me/22793980078" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+</body>
+</html>
